@@ -1,10 +1,10 @@
---- clzip-1.12/doc/clzip.texi.orig	2021-05-08 21:47:42.242597949 +0200
-+++ clzip-1.12/doc/clzip.texi	2021-05-09 08:51:23.340612123 +0200
+--- clzip-1.13/doc/clzip.texi.orig	2022-06-25 15:29:45.321459607 +0200
++++ clzip-1.13/doc/clzip.texi	2022-06-25 15:30:24.944578283 +0200
 @@ -9,9 +9,9 @@
- @set UPDATED 4 January 2021
- @set VERSION 1.12
+ @set UPDATED 24 January 2022
+ @set VERSION 1.13
  
--@dircategory Data Compression
+-@dircategory Compression
 +@dircategory File utilities:
  @direntry
 -* Clzip: (clzip).               LZMA lossless data compressor
