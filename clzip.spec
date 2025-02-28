@@ -1,12 +1,12 @@
 Summary:	LZMA file compressor (C implementation)
 Summary(pl.UTF-8):	Kompresor plików oparty na algorytmie LZMA (implementacja w C)
 Name:		clzip
-Version:	1.14
+Version:	1.15
 Release:	1
 License:	GPL v3+
 Group:		Applications/Archiving
 Source0:	http://download.savannah.gnu.org/releases/lzip/clzip/%{name}-%{version}.tar.lz
-# Source0-md5:	e03cba196a8c0780e6c2f8cc439c09eb
+# Source0-md5:	7ce24adf9bcf7ed2ffdba53c0f47c36e
 Patch0:		%{name}-info.patch
 URL:		http://savannah.nongnu.org/projects/lzip/
 BuildRequires:	lzip
@@ -31,7 +31,13 @@ systemów wbudowanych lub nie mających kompilatora C++.
 %patch -P0 -p1
 
 %build
-%configure
+# not autoconf configure, imitates 2.50+ style invocation (exported variables don't work)
+./configure \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}" \
+	CPPFLAGS="%{rpmcppflags}" \
+	LDFLAGS="%{rpmldflags}" \
+	--prefix=%{_prefix}
 
 %{__make} all info
 

@@ -1,8 +1,8 @@
---- clzip-1.14/doc/clzip.texi.orig	2024-01-30 17:05:29.224522201 +0100
-+++ clzip-1.14/doc/clzip.texi	2024-01-30 17:06:40.410803219 +0100
+--- clzip-1.15/doc/clzip.texi.orig	2025-02-28 21:48:22.031695186 +0100
++++ clzip-1.15/doc/clzip.texi	2025-02-28 21:51:17.487411327 +0100
 @@ -9,9 +9,9 @@
- @set UPDATED 22 January 2024
- @set VERSION 1.14
+ @set UPDATED 10 January 2025
+ @set VERSION 1.15
  
 -@dircategory Compression
 +@dircategory File utilities:
